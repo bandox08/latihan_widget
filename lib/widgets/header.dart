@@ -40,8 +40,7 @@ class HeaderWidget extends StatelessWidget {
             textAlign: TextAlign.center,
             maxLines: 1,
             style: TextStyle(
-              fontSize: 12,
-            ),
+                fontSize: 12, color: const Color.fromARGB(255, 3, 13, 3)),
           ),
           const Text(
             'ipsum amet nullam turpis. Vel vitae aliquam eget faucibus at libero dignissim arcu aliquam.',
@@ -83,7 +82,7 @@ class HeaderWidget extends StatelessWidget {
                     ),
                   ],
                 )),
-          )
+          ),
         ],
       ),
     );

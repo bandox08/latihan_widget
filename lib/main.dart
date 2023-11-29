@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:latihan_widget/homescreen.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Color.fromARGB(255, 255, 255, 255),
-          appBarTheme:
-              AppBarTheme(backgroundColor: Color.fromARGB(255, 255, 255, 255))),
+          textTheme: GoogleFonts.manropeTextTheme(),
+          primaryColor: const Color.fromARGB(255, 255, 255, 255),
+          appBarTheme: const AppBarTheme(
+              backgroundColor: Color.fromARGB(255, 255, 255, 255))),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
